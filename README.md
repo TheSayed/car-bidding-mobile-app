@@ -36,30 +36,7 @@ A real-time mobile auction application built with React Native, Expo, and Fireba
    npm install
    ```
 
-2. **Firebase Configuration**
-
-   Firebase credentials will be provided separately. Place them in `src/config/firebase-config.ts`:
-
-   ```typescript
-   import { initializeApp } from "firebase/app";
-   import { getAuth } from "firebase/auth";
-   import { getFirestore } from "firebase/firestore";
-
-   const firebaseConfig = {
-     apiKey: "PROVIDED_API_KEY",
-     authDomain: "PROVIDED_AUTH_DOMAIN",
-     projectId: "PROVIDED_PROJECT_ID",
-     storageBucket: "PROVIDED_STORAGE_BUCKET",
-     messagingSenderId: "PROVIDED_MESSAGING_SENDER_ID",
-     appId: "PROVIDED_APP_ID",
-   };
-
-   const app = initializeApp(firebaseConfig);
-   export const auth = getAuth(app);
-   export const db = getFirestore(app);
-   ```
-
-3. **Start the development server**
+2. **Start the development server**
 
    ```bash
    npm start
@@ -71,7 +48,7 @@ A real-time mobile auction application built with React Native, Expo, and Fireba
    expo start
    ```
 
-4. **Run the app**
+3. **Run the app**
    - Press `i` for iOS Simulator
    - Press `a` for Android Emulator
    - Scan QR code with Expo Go app for physical device
