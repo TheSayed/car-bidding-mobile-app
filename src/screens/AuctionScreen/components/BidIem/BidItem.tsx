@@ -1,7 +1,6 @@
 // BidItem.tsx
 import { memo } from "react";
 import { Text, View } from "react-native";
-import { formatRelativeTime } from "../../../../utilis/helper";
 import styles from "./BidItem.styles"; // importing from new styles file
 
 export const BidItem = memo(
@@ -11,9 +10,6 @@ export const BidItem = memo(
         <Text style={styles.bidderName}>
           {item.userName}
           {isCurrentUser && <Text style={styles.userTag}> (You)</Text>}
-        </Text>
-        <Text style={styles.bidderTime}>
-          {formatRelativeTime(new Date(item.timestamp))}
         </Text>
       </View>
       <Text style={styles.bidderAmount}>${item.amount.toLocaleString()}</Text>
